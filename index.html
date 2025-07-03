@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu Singh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Himanshu's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li>
+              <label class="switch">
+                <input type="checkbox" id="mode-toggle" />
+                <span class="slider">
+                  <span class="icon">⏾</span>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection" id="home">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Himanshu</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn ripple" onclick="window.open('Resume.pdf')">
+              Download Resume
+            </button>
+            <button
+              class="btn ripple"
+              onclick="window.open('https://github.com/himanshusinghhls')"
+            >
+              Visit GitHub
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="Profile image" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection" id="about">
+        <span class="gray">What I have done so far</span>
+        <h1>Skill Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="py.png" alt="Python logo" />
+            <div class="vertical-title">Python</div>
+            <div class="vertical-desc">
+              Built diverse projects using core Python. Developed GUI apps with
+              Tkinter, integrated MySQL, created data dashboards with Streamlit,
+              and used pandas and matplotlib for data analysis and
+              visualization.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="c.png" alt="C logo" />
+            <div class="vertical-title">C</div>
+            <div class="vertical-desc">
+              Strong foundation in Data Structures & Algorithms. Solved numerous
+              problems covering pointers, memory management, recursion, and more
+              using C.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="java.png" alt="Java logo" />
+            <div class="vertical-title">Java</div>
+            <div class="vertical-desc">
+              Applied Java for DSA and object-oriented programming. Built
+              various applications and solved problems using core concepts like
+              inheritance, abstraction, and multithreading.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="android.png" alt="Android logo" />
+            <div class="vertical-title">Android Studio</div>
+            <div class="vertical-desc">
+              Developed fully functional Android apps using Java and XML.
+              Proficient in activity lifecycle, intents, layouts, and
+              integrating backend functionalities.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="JavaScript logo" />
+            <div class="vertical-title">JavaScript</div>
+            <div class="vertical-desc">
+              Built this portfolio site and other dynamic UIs. Strong grasp of
+              core concepts including call stack, closures, anonymous functions,
+              callback functions, promises, and async/await for asynchronous
+              handling.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projectsSection" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Xcess App</h3>
+            <p>
+              Java and XML based Android application used to access digital
+              safes.
+            </p>
+            <a href="https://github.com/yourgithub/xcess-app" target="_blank"
+              >View Code</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This very portfolio! Built with HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/yourgithub/portfolio" target="_blank"
+              >View Code</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Vehicle Registration System</h3>
+            <p>
+              A DBMS project made using Java and SQL. Also using the JDBC for
+              connectivity.
+            </p>
+            <a href="https://github.com/yourgithub/project3" target="_blank"
+              >View Code</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>NutriTrack</h3>
+            <p>
+              A Python based Web abb made using Streamlit and using libraries
+              like pandas and matplotlib for data visualization.
+            </p>
+            <a href="https://github.com/yourgithub/project4" target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Himanshu's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <h4>Contact Links</h4>
+          <ul>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            <li>
+              <a href="https://github.com/himanshusinghhls" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank">Instagram</a>
+            </li>
+            <li><a href="mailto:himanshusinghhls@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; himanshu-portfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
