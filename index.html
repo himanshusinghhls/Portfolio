@@ -25,9 +25,7 @@
             <li>
               <label class="switch">
                 <input type="checkbox" id="mode-toggle" />
-                <span class="slider">
-                  <span class="icon">⏾</span>
-                </span>
+                <span class="slider"><span class="icon">⏾</span></span>
               </label>
             </li>
           </ul>
@@ -42,13 +40,10 @@
           <div>and I am passionate</div>
           <span id="element"></span>
           <div class="buttons">
-            <button class="btn ripple" onclick="window.open('Resume.pdf')">
+            <button class="btn ripple" data-action="resume">
               Download Resume
             </button>
-            <button
-              class="btn ripple"
-              onclick="window.open('https://github.com/himanshusinghhls')"
-            >
+            <button class="btn ripple" data-action="github">
               Visit GitHub
             </button>
           </div>
@@ -130,7 +125,9 @@
           <div class="project-card">
             <h3>Portfolio Website</h3>
             <p>This very portfolio! Built with HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/himanshusinghhls/Portfolio" target="_blank"
+            <a
+              href="https://github.com/himanshusinghhls/Portfolio"
+              target="_blank"
               >View Code</a
             >
           </div>
@@ -140,25 +137,59 @@
               A DBMS project made using Java and SQL. Also using the JDBC for
               connectivity.
             </p>
-          <!--
+            <!--
             <a href="https://github.com/yourgithub/project3" target="_blank"
               >View Code</a
             >
-          -->
-          </div>
+          --></div>
           <div class="project-card">
             <h3>NutriTrack</h3>
             <p>
               A Python based Web abb made using Streamlit and using libraries
               like pandas and matplotlib for data visualization.
             </p>
-            <a href="https://github.com/himanshusinghhls/NutriTrack" target="_blank"
+            <a
+              href="https://github.com/himanshusinghhls/NutriTrack"
+              target="_blank"
               >View Code</a
             >
           </div>
         </div>
       </section>
     </main>
+
+    <section class="contactSection" id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Have a project or idea? Let's talk!</p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xqaboeyz"
+          method="POST"
+        >
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn ripple">Send Message</button>
+        </form>
+      </div>
+    </section>
 
     <footer id="contact">
       <div class="footer">
@@ -177,14 +208,20 @@
         <div class="footer-third">
           <h4>Contact Links</h4>
           <ul>
-            <li><a href="https://www.linkedin.com/in/himanshusinghhls/" target="_blank">LinkedIn</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/himanshusinghhls/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
             <li>
               <a href="https://github.com/himanshusinghhls" target="_blank"
                 >GitHub</a
               >
             </li>
             <li>
-              <a href="https://www.instagram.com/hiimm_._/" target="_blank">Instagram</a>
+              <a href="https://instagram.com" target="_blank">Instagram</a>
             </li>
             <li><a href="mailto:himanshusinghhls@gmail.com">Email</a></li>
           </ul>
